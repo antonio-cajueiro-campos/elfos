@@ -1,0 +1,178 @@
+* {
+    transition: all 1s ease;
+}
+html, body {
+    animation: aniover 9s linear;
+}
+
+@keyframes aniover {
+    0% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    animation: anitrans 9s linear;
+}
+
+@keyframes anitrans {
+    0% {
+        overflow: hidden;
+        opacity: 0;
+    }
+    70% {
+        overflow: hidden;        
+        opacity: 0;
+    }
+    100% {
+        overflow: hidden;
+        opacity: 1;        
+    }
+}
+
+.banner {
+    animation: bannermation 18s linear;
+}
+
+@keyframes bannermation {
+    0% {
+        filter: invert(0%);
+    }
+    50% {
+        filter: invert(0%);
+    }
+    50.5% {
+        filter: invert(100%);
+    }
+    51% {
+        filter: invert(0%);
+    }
+    65.2% {
+        filter: invert(0%);
+    }
+    66% {
+        filter: invert(100%);
+    }
+    66.8% {
+        filter: invert(0%);
+    }
+    70.2% {
+        filter: invert(0%);
+    }
+    71% {
+        filter: invert(100%);
+    }
+    71.8% {
+        filter: invert(0%);
+    }
+    100% {
+        filter: invert(0%);
+    }
+}
+
+.load {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    animation: aniload 9s linear;
+    z-index: -1;
+    transition: z-index .7s;
+}
+
+@keyframes aniload {
+    0% {
+        opacity: 0;
+        z-index: 100;
+        transition: z-index .7s;   
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        z-index: 100;
+        transition: z-index .7s;
+    }
+}
+
+.load p {
+    position: relative;
+    line-height: 100vh;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    overflow: hidden;    
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: aniloadp 9s linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .1);
+}
+
+@keyframes aniloadp {
+    0% {
+        background-position: -500%;
+    }
+    50% {
+        background-position: 500%;
+    }
+    50.1% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.load p:after {
+    content: 'Entrando no canto dos elfos...';
+}
+@media (max-width:55em) {
+    .load p {
+        font-size: 35px;
+    }
+}
+@media (max-width:48em) {
+    .load p {
+        font-size: 28px;
+    }
+}
+@media (max-width:38em) {
+    .load p {
+        font-size: 20px;
+    }
+}
+@media (max-width:26em) {
+    .load p {
+        font-size: 15px;
+    }
+}
+@media (max-width:24em) {
+    .load p {
+        font-size: 13px;
+    }
+}
+@media (max-width:23em) {
+    .load p {
+        font-size: 12px;
+    }
+}
+@media (max-width:22em) {
+    .load p {
+        font-size: 11px;
+    }
+}
+@media (max-width:21em) {
+    .load p {
+        font-size: 10px;
+    }
+}
